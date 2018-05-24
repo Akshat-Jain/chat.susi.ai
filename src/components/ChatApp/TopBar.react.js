@@ -103,6 +103,10 @@ class TopBar extends Component {
 						key="custom"
 						onClick={this.props.handleThemeChanger}
 						rightIcon={<Edit/>}/>
+					<MenuItem
+                        containerElement={<Link to="/mydevices" />}
+                        rightIcon={<Settings />} ><Translate text="Devices"/>
+                    </MenuItem>
 					<MenuItem primaryText={<Translate text="Logout"/>}
 						containerElement={<Link to="/logout" />}
 						rightIcon={<Exit />}/>

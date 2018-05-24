@@ -6,6 +6,7 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import Logout from './components/Auth/Logout.react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import PropTypes from 'prop-types';
+import MyDevices from './components/MyDevices/MyDevices.react.js'
 import NotFound from './components/NotFound/NotFound.react';
 import Overview from './components/Overview/Overview.react';
 import Settings from './components/ChatApp/Settings/Settings.react';
@@ -45,6 +46,7 @@ class App extends Component{
             <Route exact path="/support" component={Support} />
             <Route exact path="/terms" component={Terms} />
             <Route exact path="/privacy" component={Privacy} />
+            <Route exact path="/mydevices" component={MyDevices} />
             <Route exact path="/logout" component={Logout} />
             <Route exact path="/settings" component={Settings} />
             <Route exact path="*" component={NotFound} />
