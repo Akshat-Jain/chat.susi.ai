@@ -19,6 +19,7 @@ import susiSkill from '../../images/susi_skill.png';
 import susiTestGif from '../../images/susi-test.gif';
 import React, { Component } from 'react';
 
+// eslint-disable-next-line
 class Overview extends Component {
   constructor(props) {
     super(props);

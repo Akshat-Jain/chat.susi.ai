@@ -67,6 +67,7 @@ let url =
   'access_token=' +
   cookies.get('loggedIn');
 
+// eslint-disable-next-line
 class Settings extends Component {
   constructor(props) {
     super(props);
@@ -233,8 +234,8 @@ class Settings extends Component {
               dataFetched: true,
             });
           });
-          centerLat = centerLat / mapObj.length;
-          centerLng = centerLng / mapObj.length;
+          centerLat /= mapObj.length;
+          centerLng /= mapObj.length;
           if (obj.length) {
             this.setState({
               deviceData: true,

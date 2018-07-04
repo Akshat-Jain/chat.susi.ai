@@ -17,6 +17,7 @@ const additionalStyles = {
 
 const ESCAPE_KEY = 27;
 
+// eslint-disable-next-line
 class ExpandingSearchField extends Component {
   constructor(props) {
     super(props);

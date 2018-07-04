@@ -58,6 +58,7 @@ $.urlParam = function(name) {
   return 0;
 };
 
+// eslint-disable-next-line
 class MessageComposer extends Component {
   constructor(props) {
     super(props);

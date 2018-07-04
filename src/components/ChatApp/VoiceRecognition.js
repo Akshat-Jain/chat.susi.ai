@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 let counter = 0;
 
+// eslint-disable-next-line
 class VoiceRecognition extends Component {
   constructor(props) {
     super(props);
