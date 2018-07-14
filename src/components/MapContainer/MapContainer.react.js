@@ -9,7 +9,9 @@ export default class MapContainer extends Component {
   componentDidUpdate() {
     this.loadMap();
   }
-
+  shouldComponentUpdate() {
+    return this.props.updateMap;
+  }
   loadMap() {
     if (this.props && this.props.google) {
       const { google } = this.props;
@@ -87,4 +89,5 @@ MapContainer.propTypes = {
   rooms: PropTypes.array,
   macids: PropTypes.array,
   google: PropTypes.object,
+  updateMap: PropTypes.bool,
 };
