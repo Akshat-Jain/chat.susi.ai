@@ -47,14 +47,15 @@ export default class MapContainer extends Component {
 
         google.maps.event.addListener(marker, 'click', function() {
           infoWindow.setContent(
-            'Mac Address: ' +
+            '<b> Mac Address: ' +
               marker.macid +
               '<br/>' +
               'Room: ' +
               marker.room +
               '<br/>' +
               'Device name: ' +
-              marker.devicename,
+              marker.devicename +
+              '</b>',
           );
           infoWindow.open(this.map, marker);
         });
